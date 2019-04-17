@@ -1,0 +1,12 @@
+[submodule "kelinci"]
+	path = kelinci
+	url = ./badger
+[submodule "badger"]
+	path = badger
+	url = ./badger
+[submodule "jpf-core"]
+	path = jpf-core
+	url = ./jpf-core
+[submodule "jpf-symbc"]
+	path = jpf-symbc
+	url = ./jpf-symbc
