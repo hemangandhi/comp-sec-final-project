@@ -1,0 +1,3 @@
+# time, file, cost 
+1557001372,/home/heman/Documents/undergrad/security/final-proj/rsa-test/experiment-results/01-rsa-badger-1/./kelinciwca_analysis/in_dir/example,0.0,score
+1557001373,/home/heman/Documents/undergrad/security/final-proj/rsa-test/experiment-results/01-rsa-badger-1/./kelinciwca_analysis/fuzzer-out/afl/queue/id:000000,orig:example,0.0
