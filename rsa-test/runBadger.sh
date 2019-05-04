@@ -25,7 +25,7 @@ execution_mode=1
 
 # server parameter
 # server_param="InsertionSortFuzz @@"
-server_param="Sample@@"
+server_param="Sample @@"
 
 # CostMetric, use "jumps" or "userdefined"
 costMetric="userdefined"

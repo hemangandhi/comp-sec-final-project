@@ -28,21 +28,17 @@
 import java.math.BigInteger;
 import java.security.SecureRandom;
 
-import gov.nasa.jpf.symbc.Debug;
 
-public class SampleSym {
+public class Sample {
    private final static BigInteger one      = new BigInteger("1");
    private final static SecureRandom random = new SecureRandom();
 
-   @Symbolic("true")
    private BigInteger privateKey;
-   @Symbolic("true")
    private BigInteger publicKey;
-   @Symbolic("true")
    private BigInteger modulus;
 
    // generate an N-bit (roughly) public and private key
-   SampleSym(int N) {
+   Sample(int N) {
       BigInteger p = BigInteger.probablePrime(N/2, random);
       BigInteger q = BigInteger.probablePrime(N/2, random);
       BigInteger phi = (p.subtract(one)).multiply(q.subtract(one));
@@ -70,8 +66,13 @@ public class SampleSym {
    }
 
    public static void main(String[] args) {
-      int N = Integer.parseInt(args[0]);
-      SampleSym key = new SampleSym(N);
+      int N;
+      try{
+        N = Integer.parseInt(args[0]);
+      } catch (NumberFormatException nfe){
+        N = 1024;
+      }
+      Sample key = new Sample(N);
       System.out.println(key);
 
       // create random message, encrypt and decrypt
@@ -87,6 +88,5 @@ public class SampleSym {
       System.out.println("message   = " + message);
       System.out.println("encrypted = " + encrypt);
       System.out.println("decrypted = " + decrypt);
-      Debug.printPC("Got condition:\n");
    }
 }

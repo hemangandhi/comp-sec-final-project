@@ -1,3 +1,4 @@
 # time, file, cost 
-1557001372,/home/heman/Documents/undergrad/security/final-proj/rsa-test/experiment-results/01-rsa-badger-1/./kelinciwca_analysis/in_dir/example,0.0,score
-1557001373,/home/heman/Documents/undergrad/security/final-proj/rsa-test/experiment-results/01-rsa-badger-1/./kelinciwca_analysis/fuzzer-out/afl/queue/id:000000,orig:example,0.0
+1557009256,/home/heman/Documents/undergrad/security/final-proj/rsa-test/experiment-results/01-rsa-badger-1/./kelinciwca_analysis/in_dir/example,0.0,score
+1557009257,/home/heman/Documents/undergrad/security/final-proj/rsa-test/experiment-results/01-rsa-badger-1/./kelinciwca_analysis/fuzzer-out/afl/queue/id:000000,orig:example,0.0
+1557009317,/home/heman/Documents/undergrad/security/final-proj/rsa-test/experiment-results/01-rsa-badger-1/./kelinciwca_analysis/fuzzer-out/afl/queue/id:000001,src:000000,op:havoc,rep:64,+cov,0.0

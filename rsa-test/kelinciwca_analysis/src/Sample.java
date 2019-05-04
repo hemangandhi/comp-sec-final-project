@@ -66,7 +66,12 @@ public class Sample {
    }
 
    public static void main(String[] args) {
-      int N = Integer.parseInt(args[0]);
+      int N;
+      try{
+        N = Integer.parseInt(args[0]);
+      } catch (NumberFormatException nfe){
+        N = 1024;
+      }
       Sample key = new Sample(N);
       System.out.println(key);
 
