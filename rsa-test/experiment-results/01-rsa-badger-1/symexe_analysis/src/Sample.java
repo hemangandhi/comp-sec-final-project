@@ -68,7 +68,7 @@ public class Sample {
    public static void main(String[] args) {
       int N;
       try{
-        N = Integer.parseInt(args[0]);
+        N = Integer.parseInt(args[1]);
       } catch (NumberFormatException nfe){
         N = 1024;
       }

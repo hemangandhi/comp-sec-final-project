@@ -1,6 +1,6 @@
 [0;36mafl-fuzz [1;97m2.52b[0m by <lcamtuf@google.com>
 [1;92m[+] [0mLooks like we're not running on a tty, so I'll be a bit less verbose.[0m
-[1;92m[+] [0mYou have 4 CPU cores and 9 runnable tasks (utilization: 225%).[0m
+[1;92m[+] [0mYou have 4 CPU cores and 12 runnable tasks (utilization: 300%).[0m
 [1;93m[!] [1;97mWARNING: [0mSystem under apparent load, performance may be spotty.[0m
 [1;94m[*] [0mChecking CPU core loadout...[0m
 [1;92m[+] [0mFound a free CPU core, binding to #0.[0m
@@ -26,7 +26,7 @@
 [1;94m[*] [0mAttempting dry run with 'id:000000,orig:example'...[0m
 [1;94m[*] [0mSpinning up the fork server...[0m
 [1;92m[+] [0mAll right - fork server is up.[0m
-[1;90m    len = 4, map size = 33, exec speed = 117291 us
+[1;90m    len = 1, map size = 33, exec speed = 105702 us
 [0m[1;93m[!] [1;97mWARNING: [0mInstrumentation output varies across runs.[0m
 [1;92m[+] [0mAll test cases processed.[0m
 
@@ -35,7 +35,7 @@
 
 [1;90m    Test case count : [0m1 favored, 1 variable, 1 total
 [1;90m       Bitmap range : [0m33 to 33 bits (average: 33.00 bits)
-[1;90m        Exec timing : [0m117k to 117k us (average: 117k us)
+[1;90m        Exec timing : [0m105k to 105k us (average: 105k us)
 [0m
 [1;92m[+] [0mAll set and ready to roll![0m
 [1;94m[*] [0mEntering queue cycle 1.[0m
@@ -143,8 +143,6 @@
 [1;94m[*] [0mEntering queue cycle 52.[0m
 [1;94m[*] [0mFuzzing test case #0 (1 total, 0 uniq crashes found)...[0m
 [1;94m[*] [0mEntering queue cycle 53.[0m
-[1;94m[*] [0mFuzzing test case #0 (1 total, 0 uniq crashes found)...[0m
-[1;94m[*] [0mEntering queue cycle 54.[0m
 [1;94m[*] [0mFuzzing test case #0 (1 total, 0 uniq crashes found)...[0m
 [?25h[1;91m
 

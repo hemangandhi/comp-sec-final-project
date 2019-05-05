@@ -19,7 +19,7 @@ JavaPathfinder core system v8.0 (rev -1) - (C) 2005-2014 United States Governmen
 ====================================================== system under test
 Sample.main("/home/heman/Documents/undergrad/security/final-proj/rsa-test/experiment-results/01-rsa-badger-1/./kelinciwca_analysis/in_dir/example")
 
-====================================================== search started: 5/4/19 6:09 PM
+====================================================== search started: 5/4/19 6:36 PM
 
 ====================================================== error 1
 gov.nasa.jpf.vm.NoUncaughtExceptionsProperty
@@ -85,7 +85,7 @@ instructions:       2329933
 max memory:         147MB
 loaded code:        classes=149,methods=3062
 
-====================================================== search finished: 5/4/19 6:09 PM
+====================================================== search finished: 5/4/19 6:36 PM
 #FOUND ERRORS = 1
 Run JPF with argument: /home/heman/Documents/undergrad/security/final-proj/rsa-test/experiment-results/01-rsa-badger-1/./kelinciwca_analysis/fuzzer-out/afl/queue/id:000000#orig:example
 [WARNING] unknown classpath element: /home/heman/Documents/undergrad/security/final-proj/badger/badger/build/tests
@@ -108,7 +108,7 @@ JavaPathfinder core system v8.0 (rev -1) - (C) 2005-2014 United States Governmen
 ====================================================== system under test
 Sample.main("/home/heman/Documents/undergrad/security/final-proj/rsa-test/experiment-results/01-rsa-badger-1/./kelinciwca_analysis/fuzzer-out/afl/queue/id:000000#orig:example")
 
-====================================================== search started: 5/4/19 6:09 PM
+====================================================== search started: 5/4/19 6:36 PM
 
 ====================================================== error 1
 gov.nasa.jpf.vm.NoUncaughtExceptionsProperty
@@ -171,10 +171,10 @@ search:             maxDepth=47,constraints=0
 choice generators:  thread=47 (signal=0,lock=1,sharedRef=0,threadApi=0,reschedule=46), data=0
 heap:               new=2362,released=215,maxLive=1737,gcCycles=46
 instructions:       2329933
-max memory:         147MB
+max memory:         208MB
 loaded code:        classes=149,methods=3062
 
-====================================================== search finished: 5/4/19 6:09 PM
+====================================================== search finished: 5/4/19 6:36 PM
 #FOUND ERRORS = 1
 [SPF] nothing to process, wait for 60 sec ...
 [SPF] nothing to process, wait for 60 sec ...
