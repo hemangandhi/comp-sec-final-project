@@ -1,0 +1,14 @@
+\BOOKMARK [1][-]{section.1}{Introduction}{}% 1
+\BOOKMARK [1][-]{section.2}{Related\040Works}{}% 2
+\BOOKMARK [2][-]{subsection.2.1}{Fuzzing\040and\040Symbolic\040Execution}{section.2}% 3
+\BOOKMARK [2][-]{subsection.2.2}{Cryptographic\040Algorithms}{section.2}% 4
+\BOOKMARK [2][-]{subsection.2.3}{The\040Union\040of\040the\040Approaches}{section.2}% 5
+\BOOKMARK [1][-]{section.3}{The\040Program}{}% 6
+\BOOKMARK [2][-]{subsection.3.1}{The\040Architecture\040of\040Badger}{section.3}% 7
+\BOOKMARK [2][-]{subsection.3.2}{Extending\040JPF}{section.3}% 8
+\BOOKMARK [2][-]{subsection.3.3}{SymExe\040Searches}{section.3}% 9
+\BOOKMARK [2][-]{subsection.3.4}{Takeaways}{section.3}% 10
+\BOOKMARK [1][-]{section.4}{Future\040Work}{}% 11
+\BOOKMARK [2][-]{subsection.4.1}{Generally\040Specifying\040Algorithms}{section.4}% 12
+\BOOKMARK [2][-]{subsection.4.2}{Symbolic\040Randomness\040and\040Propagating\040Entropy}{section.4}% 13
+\BOOKMARK [1][-]{section.5}{References}{}% 14

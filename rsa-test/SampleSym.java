@@ -26,19 +26,17 @@
  ******************************************************************************/
 
 import java.math.BigInteger;
-import java.security.SecureRandom;
+// import java.security.SecureRandom;
+import java.util.Random;
 
 import gov.nasa.jpf.symbc.Debug;
 
 public class SampleSym {
    private final static BigInteger one      = new BigInteger("1");
-   private final static SecureRandom random = new SecureRandom();
+   private final static Random random = new Random();
 
-   @Symbolic("true")
    private BigInteger privateKey;
-   @Symbolic("true")
    private BigInteger publicKey;
-   @Symbolic("true")
    private BigInteger modulus;
 
    // generate an N-bit (roughly) public and private key
@@ -50,6 +48,10 @@ public class SampleSym {
       modulus    = p.multiply(q);
       publicKey  = new BigInteger("65537");     // common value in practice = 2^16 + 1
       privateKey = publicKey.modInverse(phi);
+
+      privateKey = Debug.makeSymbolicRef("privateKey", privateKey);
+      publicKey = Debug.makeSymbolicRef("publicKey", publicKey);
+      modulus = Debug.makeSymbolicRef("modulus", modulus);
    }
 
 

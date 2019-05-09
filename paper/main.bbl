@@ -1,0 +1,48 @@
+\begin{thebibliography}{1}
+
+\bibitem{AFL}
+{Technical ``whitepaper'' for afl-fuzz}.
+
+\bibitem{miningPQ}
+{Nadia Heninger,Zakier Durumeric, Eric Wustrow, J Alex Halderman}.
+\newblock {Mining Your Ps and Qs: Detection of Widespread Weak Keys in Network
+  Devices}.
+\newblock {\em {USENIX}}, 2012.
+
+\bibitem{diffFuzz}
+{Slurin Nilizadeh, Yannic Noller, Corina S. Pasareanu}.
+\newblock {DifFuzz: Differential Fuzzing for Side-Channel Analysis}.
+\newblock {\em {arXiv}}.
+
+\bibitem{cdf}
+{JP Aumasson, Yolan Romailler}.
+\newblock {Automated Testing of Crypto Software Using Differential Fuzzing}.
+\newblock {\em {Blackhat}}.
+
+\bibitem{badger}
+{Yannic Noller, Rody Kersten, Corina S. Pasareanu}.
+\newblock {Badger: Complexity Analysis with Fuzzing and SymbolicExecution}.
+\newblock {\em ACM SIGSOFT International Symposium on Software Testing and
+  Analysis}, 2018.
+
+\bibitem{symExeCrypto}
+{Mathy Vanhoef, Frank Piessens}.
+\newblock {Symbolic Execution of Security Protocol Implementations:Handling
+  Cryptographic Primitives}.
+\newblock {\em {arXiv}}.
+
+\bibitem{RSAImpl}
+{Robert Sedgewick, Kevin Wayne}.
+\newblock {RSA.java}.
+
+\bibitem{singularity}
+{Jiayi Wei, Jia Chen, Yu Feng, Kostas Ferles, Isil Dilling}.
+\newblock {Singularity: Pattern Fuzzing for Worst Case Complexity}.
+\newblock {\em {ESEC/FSE}}, 2018.
+
+\bibitem{probProg}
+{Andrew D Gordon, Thomas A Henzinger, Aditya V Nori, Sriram K Rajamani}.
+\newblock {Probabilistic Programming}.
+\newblock 2014.
+
+\end{thebibliography}

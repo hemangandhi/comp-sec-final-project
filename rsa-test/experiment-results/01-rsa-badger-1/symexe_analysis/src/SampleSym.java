@@ -26,19 +26,21 @@
  ******************************************************************************/
 
 import java.math.BigInteger;
-import java.security.SecureRandom;
+// import java.security.SecureRandom;
+import java.util.Random;
 
+import gov.nasa.jpf.symbc.Debug;
 
-public class Sample {
+public class SampleSym {
    private final static BigInteger one      = new BigInteger("1");
-   private final static SecureRandom random = new SecureRandom();
+   private final static Random random = new Random();
 
    private BigInteger privateKey;
    private BigInteger publicKey;
    private BigInteger modulus;
 
    // generate an N-bit (roughly) public and private key
-   Sample(int N) {
+   SampleSym(int N) {
       BigInteger p = BigInteger.probablePrime(N/2, random);
       BigInteger q = BigInteger.probablePrime(N/2, random);
       BigInteger phi = (p.subtract(one)).multiply(q.subtract(one));
@@ -46,6 +48,10 @@ public class Sample {
       modulus    = p.multiply(q);
       publicKey  = new BigInteger("65537");     // common value in practice = 2^16 + 1
       privateKey = publicKey.modInverse(phi);
+
+      privateKey = Debug.makeSymbolicRef("privateKey", privateKey);
+      publicKey = Debug.makeSymbolicRef("publicKey", publicKey);
+      modulus = Debug.makeSymbolicRef("modulus", modulus);
    }
 
 
@@ -66,13 +72,8 @@ public class Sample {
    }
 
    public static void main(String[] args) {
-      int N;
-      try{
-        N = Integer.parseInt(args[1]);
-      } catch (NumberFormatException nfe){
-        N = 1024;
-      }
-      Sample key = new Sample(N);
+      int N = Integer.parseInt(args[0]);
+      SampleSym key = new SampleSym(N);
       System.out.println(key);
 
       // create random message, encrypt and decrypt
@@ -88,5 +89,6 @@ public class Sample {
       System.out.println("message   = " + message);
       System.out.println("encrypted = " + encrypt);
       System.out.println("decrypted = " + decrypt);
+      Debug.printPC("Got condition:\n");
    }
 }

@@ -3,8 +3,8 @@ dir.initial.input=./kelinciwca_analysis/in_dir
 dir.export=./kelinciwca_analysis/fuzzer-out/symexe/queue
 
 jpf.classpath=./symexe_analysis/bin
-jpf.target=Sample
-symbolic.method=Sample.main(con)
+jpf.target=SampleSym
+symbolic.method=SampleSym.main(con)
 symbolic.dp=z3
 symbolic.min_int=0
 symbolic.max_int=255

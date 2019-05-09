@@ -26,12 +26,13 @@
  ******************************************************************************/
 
 import java.math.BigInteger;
-import java.security.SecureRandom;
+// import java.security.SecureRandom;
+import java.util.Random;
 
 
 public class Sample {
    private final static BigInteger one      = new BigInteger("1");
-   private final static SecureRandom random = new SecureRandom();
+   private final static Random random = new Random();
 
    private BigInteger privateKey;
    private BigInteger publicKey;
@@ -70,6 +71,8 @@ public class Sample {
       try{
         N = Integer.parseInt(args[1]);
       } catch (NumberFormatException nfe){
+        N = 1024;
+      } catch (ArrayIndexOutOfBoundsException nfe){
         N = 1024;
       }
       Sample key = new Sample(N);
